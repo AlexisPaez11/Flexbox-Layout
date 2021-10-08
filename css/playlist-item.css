@@ -49,4 +49,5 @@
 
 .playlist-item::before {
     content: counter(playlistItem, decimal);
+    inline-size: 1.25rem;
 }
