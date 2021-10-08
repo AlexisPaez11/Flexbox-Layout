@@ -1,0 +1,29 @@
+.playlistHeader {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.playlistHeader-cover img {
+    inline-size: 14.5rem;
+    block-size: 14.5rem;
+    vertical-align: middle;
+}
+
+.playlistHeader-details {
+    display: flex;
+    align-items: flex-end;
+}
+
+.playlistHeader-title {
+    color: var(--white);
+    font: bold 4rem var(--FontFamily);
+    display: block;
+    margin: 0;
+    margin-block-end: .5rem;
+}
+
+.playlistHeader-artist {
+    color: var(--gray10);
+    font: normal 1rem var(--FontFamily);
+    margin: 0;
+}

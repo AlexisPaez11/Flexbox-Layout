@@ -1,0 +1,39 @@
+@import url(./playlistA.css);
+@import url(./playlistB.css);
+
+.playlistList {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlistList-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1rem; */
+  padding-block-start: .575rem;
+  margin-block-end: 1rem;
+}
+
+.playlist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.playlistList-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-block-end: .50rem;
+}
+
+.playlistList-container > * {
+  flex-shrink: 0;
+}
+
+.playlistList-title {
+  font: var(--headline2);
+  color: var(--white);
+  margin: 0;
+}

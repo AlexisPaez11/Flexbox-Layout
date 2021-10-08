@@ -1,0 +1,16 @@
+:root {
+  --sidebarInlineSize: 15rem;
+  --headerInlineSize:70.375rem;
+  --minBlockSize: 30.5rem;
+  --minInlineSize: 48rem;
+  --bottomSize: 5.75rem;
+}
+
+.layoutHeader {
+  block-size: calc(100vh - var(--bottomSize));
+  inline-size: var(--headerInlineSize);
+  min-block-size: var(--minBlockSize);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}

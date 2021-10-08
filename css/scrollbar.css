@@ -1,0 +1,42 @@
+/* Layout */
+::-webkit-scrollbar {
+  inline-size: 1em;
+  block-size: 1rem;
+  background: none;
+}
+::-webkit-scrollbar-button {
+  inline-size: 0;
+  block-size: 0;
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  /* background: royalblue; */
+  background: var(--gray30);
+  /* border-radius: 2rem; */
+}
+
+
+/* Sidebar */
+.layout-sidebar::-webkit-scrollbar {
+  inline-size: .6em;
+  block-size: .6rem;
+  background: none;
+}
+.layout-sidebar::-webkit-scrollbar-thumb {
+  /* background: red; */
+  background: var(--gray50);
+  border-radius: 0rem;
+}
+
+
+/* Main */
+.playlistList-container::-webkit-scrollbar {
+  inline-size: .5em;
+  block-size: .5rem;
+  background: none;
+}
+.playlistList-container::-webkit-scrollbar-thumb {
+  background: rebeccapurple;
+  background: var(--gray30);
+  border-radius: 2rem;
+}

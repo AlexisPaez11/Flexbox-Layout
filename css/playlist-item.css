@@ -1,0 +1,52 @@
+.playlist-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-inline-start: 1rem;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
+    border-radius: .5rem;
+    transition: .3s background;
+}
+
+.playlist-item:hover, .playlistA:focus-within,
+.playlist-item:focus-within .playlist-item {
+    background: var(--gray30);
+    cursor: pointer;
+}
+
+.playlist-item img {
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+}
+
+.playlist-itemDetails {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.playlist-itemArtist {
+    font: var(--basefont-bold);
+    color: var(--white);
+    text-align: start;
+    inline-size: 22.5rem;
+}
+
+.playlist-itemViews {
+    text-align: center;
+    inline-size: 10rem;
+}
+
+.playlist-itemTime {
+    text-align: end;
+    inline-size: 5rem;
+}
+
+.playlist-item {
+    counter-increment: playlistItem;
+}
+
+.playlist-item::before {
+    content: counter(playlistItem, decimal);
+}

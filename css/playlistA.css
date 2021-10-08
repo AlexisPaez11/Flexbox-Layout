@@ -1,0 +1,95 @@
+.playlistA {
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: var(--gray40);
+  box-sizing: border-box;
+  transition: .3s background;
+}
+
+.playlistA:hover, .playlistA:focus-within {
+  background: var(--gray30);
+  cursor: pointer;
+}
+
+.playlistA-cover {
+  position: relative;
+  border-radius: .75rem;
+  margin-block-end: 1rem;
+  overflow: hidden;
+}
+
+.playlistA button {
+  position: absolute;
+  right: .5rem;
+  bottom: .5rem;
+  opacity: 0;
+  transform: translateY(.25rem);
+  will-change: opacity, transform;
+  transition: .3s opacity, .3s transform;
+}
+
+.playlistA:hover .playlistA-cover button, 
+.playlistA:focus-within .playlistA-cover button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.playlistA img {
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.playlistA-title {
+  font: var(--basefont-bold);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin: 0;
+  margin-block-end: .25rem;
+  inline-size: 9.375rem;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlistA-description {
+  font: var(--basefont-normal);
+  margin: 0;
+  inline-size: 9.375rem;
+  line-height: 1rem;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-block-end: .25rem;
+}
+
+
+/* Album */
+.playlistA--title {
+  font: var(--basefont-bold);
+  font-size: 1rem;
+  color: var(--white);
+  margin: 0;
+  margin-block-end: .25rem;
+  inline-size: 9.375rem;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playlistA--description {
+  font: var(--basefont-normal);
+  margin: 0;
+  inline-size: 9.375rem;
+  line-height: 1rem;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-block-end: .25rem;
+}
+
